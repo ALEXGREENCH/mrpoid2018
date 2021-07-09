@@ -1,9 +1,9 @@
 package com.mrpoid.mrplist.app;
 
 import android.os.Bundle;
-import android.support.v4.app.FragmentTransaction;
 
-import com.mrpoid.mrpliset.R;
+import androidx.fragment.app.FragmentTransaction;
+
 import com.mrpoid.mrplist.view.ExplorerFragment;
 
 public class FileManagerActivity extends BaseActivity {

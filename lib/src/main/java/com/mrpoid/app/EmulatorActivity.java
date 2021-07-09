@@ -50,8 +50,6 @@ import android.os.Handler;
 import android.os.Message;
 import android.os.Process;
 import android.os.Vibrator;
-import android.support.v4.app.DialogFragment;
-import android.support.v7.app.AlertDialog;
 import android.text.InputFilter;
 import android.view.ContextMenu;
 import android.view.Gravity;
@@ -65,6 +63,9 @@ import android.widget.EditText;
 import android.widget.RelativeLayout.LayoutParams;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AlertDialog;
+import androidx.fragment.app.DialogFragment;
 
 /**
  * @author JianbinZhu

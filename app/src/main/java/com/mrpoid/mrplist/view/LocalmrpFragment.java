@@ -17,10 +17,6 @@ import android.content.Context;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.LoaderManager.LoaderCallbacks;
-import android.support.v4.content.AsyncTaskLoader;
-import android.support.v4.content.Loader;
 import android.view.ContextMenu;
 import android.view.ContextMenu.ContextMenuInfo;
 import android.view.LayoutInflater;
@@ -37,8 +33,13 @@ import android.widget.AdapterView.OnItemLongClickListener;
 import android.widget.ListView;
 import android.widget.TextView;
 
-public class LocalmrpFragment extends Fragment 
-	implements OnItemLongClickListener, OnItemClickListener, LoaderCallbacks<List<MpFile>>, OnClickListener {
+import androidx.fragment.app.Fragment;
+import androidx.loader.app.LoaderManager;
+import androidx.loader.content.AsyncTaskLoader;
+import androidx.loader.content.Loader;
+
+public class LocalmrpFragment extends Fragment
+	implements OnItemLongClickListener, OnItemClickListener, LoaderManager.LoaderCallbacks<List<MpFile>>, OnClickListener {
 	MpListAdapter mAdapter;
 	int pressedPosition;
 	MyLoader mLoader;

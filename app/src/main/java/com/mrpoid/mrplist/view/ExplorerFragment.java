@@ -1,14 +1,9 @@
 package com.mrpoid.mrplist.view;
 
-import java.io.FileFilter;
-
-import com.mrpoid.mrplist.moduls.MpFile;
-
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.View;
-
 
 
 /**

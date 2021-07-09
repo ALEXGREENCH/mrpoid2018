@@ -15,7 +15,7 @@
  */
 package com.mrpoid.app;
 
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.edroid.common.utils.SdkUtils;
 
