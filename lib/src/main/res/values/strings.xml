@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="transparent">Transparent：</string>
+    <string name="horizontal">Horizontal</string>
+    <string name="simple">Simple</string>
+    <string name="save">Save</string>
+    <string name="drag_here_to_not_show">Drag here to not show</string>
+</resources>

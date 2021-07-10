@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="transparent">透明：</string>
+    <string name="horizontal">横屏</string>
+    <string name="simple">简单</string>
+    <string name="save">保存</string>
+    <string name="drag_here_to_not_show">拖至此处不显示</string>
+</resources>

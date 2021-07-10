@@ -89,8 +89,8 @@ public class HomeActivity extends AppCompatActivity implements OnClickListener,
 		R.drawable.wp5
 	};
 	
-	private static final String[] PAGE_TITLES = {
-			"最近打开", "本地浏览"
+	private static final Integer[] PAGE_TITLES = {
+			R.string.recently_opened, R.string.local_browsing
 	};
 	
 	private MyFavoriteFragment favoriteFmg;
@@ -237,7 +237,7 @@ public class HomeActivity extends AppCompatActivity implements OnClickListener,
 
 	@Override
 	public void onPageSelected(int page) {
-		setSubTitle(PAGE_TITLES[page]);
+		setSubTitle(getString(PAGE_TITLES[page]));
 	}
 	
 	public final class MyFragmentPagerAdapter extends FragmentPagerAdapter {
@@ -267,7 +267,7 @@ public class HomeActivity extends AppCompatActivity implements OnClickListener,
 
 		@Override
 		public CharSequence getPageTitle(int position) {
-			return PAGE_TITLES[position % PAGE_TITLES.length];
+			return getString(PAGE_TITLES[position % PAGE_TITLES.length]);
 		}
 	}
 	
@@ -302,7 +302,7 @@ public class HomeActivity extends AppCompatActivity implements OnClickListener,
 				break;
 			}
 			case 1: {
-				HelpActivity.show(getActivity(), Uri.parse("https://github.com/Yichou/mrpoid2018"));
+				HelpActivity.show(getActivity(), Uri.parse("https://github.com/ALEXGREENCH/mrpoid2018"));
 				break;
 			}
 			case 2: {

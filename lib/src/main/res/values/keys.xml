@@ -13,14 +13,14 @@
         <item >9</item>
         <item >*</item>
         <item >#</item>
-        <item >上</item>
-        <item >下</item>
-        <item >左</item>
-        <item >右</item>
-        <item >挂机</item>
-        <item >左软</item>
-        <item >右软</item>
-        <item >接听</item>
+        <item >v</item>
+        <item >under</item>
+        <item >left</item>
+        <item >right</item>
+        <item >Hang up</item>
+        <item >Left soft</item>
+        <item >Right soft</item>
+        <item >Answer</item>
         <item >ok</item>
     </string-array>
 </resources>

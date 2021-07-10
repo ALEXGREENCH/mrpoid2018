@@ -45,7 +45,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:gravity="center_vertical"
-                android:text="透明：" />
+                android:text="@string/transparent" />
 
             <SeekBar
                 android:id="@+id/seekBar2"
@@ -67,14 +67,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="横屏" />
+                android:text="@string/horizontal" />
 
             <CheckBox
                 android:id="@+id/checkBox2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="简单" />
+                android:text="@string/simple" />
 
             <Button
                 android:id="@+id/button1"
@@ -82,7 +82,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="保存" />
+                android:text="@string/save" />
         </LinearLayout>
 
         <TextView
@@ -92,7 +92,7 @@
             android:gravity="center"
             android:paddingBottom="8dp"
             android:paddingTop="5dp"
-            android:text="拖至此处不显示"
+            android:text="@string/drag_here_to_not_show"
             android:background="#80f00000"
             android:textColor="#80f0f0f0" />
     </LinearLayout>

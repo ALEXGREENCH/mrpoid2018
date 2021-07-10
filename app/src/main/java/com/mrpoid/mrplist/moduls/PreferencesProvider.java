@@ -40,6 +40,7 @@ public final class PreferencesProvider {
     }
 
     private static int getInt(String key, int def) {
+        //noinspection ConstantConditions
         return sKeyValues.containsKey(key) && sKeyValues.get(key) instanceof Integer ?
                 (Integer) sKeyValues.get(key) : def;
     }
@@ -49,10 +50,11 @@ public final class PreferencesProvider {
         Editor editor = preferences.edit();
         editor.putInt(key, value);
         editor.apply(); // For better performance
-        sKeyValues.put(key, Integer.valueOf(value));
+        sKeyValues.put(key, value);
     }
 
     private static boolean getBoolean(String key, boolean def) {
+        //noinspection ConstantConditions
         return sKeyValues.containsKey(key) && sKeyValues.get(key) instanceof Boolean ?
                 (Boolean) sKeyValues.get(key) : def;
     }
@@ -64,7 +66,7 @@ public final class PreferencesProvider {
           .putBoolean(key, value)
           .apply(); // For better performance
         
-        sKeyValues.put(key, Boolean.valueOf(value));
+        sKeyValues.put(key, value);
     }
 
     private static String getString(String key, String def) {

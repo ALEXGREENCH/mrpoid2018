@@ -7,22 +7,20 @@ import org.json.JSONArray;
 
 import com.edroid.common.utils.FileUtils;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 
 public class MyFavoriteManager {
+
+	@SuppressLint("StaticFieldLeak")
 	static MyFavoriteManager instance = new MyFavoriteManager();
-	
 	
 	public static MyFavoriteManager getInstance() {
 		return instance;
 	}
 	
 	private Context mContext;
-	private List<MpFile> list;
-	
-	public MyFavoriteManager() {
-		list = new ArrayList<MpFile>();
-	}
+	private final List<MpFile> list = new ArrayList<>();
 	
 	public void init(Context context) {
 		this.mContext = context.getApplicationContext();
